@@ -180,7 +180,7 @@ def search(dictionary):
     # TODO: Copy your code from the classroom to complete this function
     
     # First, Iterate eliminate() and only_choice() using the previous procedure
-    dictionary = iterate(dictionary)
+    dictionary = reduce_puzzle(dictionary)
     if dictionary is False:
         return False ## Failed earlier
     if all(len(dictionary[s]) == 1 for s in boxes): 
